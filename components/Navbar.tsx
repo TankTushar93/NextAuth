@@ -24,7 +24,7 @@ const Navbar = () => {
     </ul>
 
  <button onClick={()=>router.push('/profile')} type="button" className="hidden transition-all bg-white rounded-full md:inline hover:opacity-90 active:scale-95 ">
-        <Image className='object-cover w-10 h-10 rounded-full' src={assets.header_img} alt='Hello' height={19} width={19}/>
+        <Image onClick={()=>router.push('/profile')} className='object-cover w-10 h-10 rounded-full' src={assets.header_img} alt='Hello' height={19} width={19}/>
         </button>
        
     

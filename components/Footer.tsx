@@ -1,9 +1,13 @@
+"use client"
+import React from 'react'
+import Image from 'next/image'
+import { assets } from '../assets/assets'
 const Footer = () => {
     return (
         <div className='w-full px-6 pt-8 text-gray-500/80 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-r from-indigo-200 to-purple-400'>
             <div className='flex flex-wrap justify-between gap-12 md:gap-6'>
                 <div className='max-w-80'>
-                    <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoColored.svg" alt="logo" className='h-8 mb-4 md:h-9' />
+                    <Image src={assets.logo} alt="logo" height={90} width={90} className='h-8 mb-4 md:h-9' />
                     <p className='text-sm'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                     </p>
